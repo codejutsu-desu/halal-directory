@@ -36,7 +36,7 @@ export default function Page({ filteredPaginatedRestaurants }: Props) {
   };
 
   return (
-    <div className="grid grid-cols-3 gap-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-2">
       {filteredPaginatedRestaurants.map(
         (restaurant: Restaurant, index: number) => (
           <Card key={index}>
